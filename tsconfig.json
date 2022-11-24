@@ -1,0 +1,29 @@
+{
+    "extends": "./.nuxt/tsconfig.json",
+    "ts-node": {
+      "compilerOptions": {
+        "module": "commonjs"
+      },
+      "typeCheck": false,
+      "transpileOnly": true
+    },
+    "compilerOptions": {
+      "types": [
+        "@nuxt/types",
+        "@types/node",
+        "@nuxtjs/sentry",
+        "@misc/base-vue-module",
+        "@types/jest",
+        "nuxt-typed-vuex"
+      ]
+    },
+    "vueCompilerOptions": {
+      "target": 2.7
+    },
+    "include" : ["src/**/*","node_modules/@av.ru/**/*.ts"],
+    "exclude": [
+      ".nuxt",
+      "dist"
+    ]
+  }
+  

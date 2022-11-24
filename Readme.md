@@ -1,0 +1,3 @@
+- yarn
+- yarn dev
+- Open localhost:8080

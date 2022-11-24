@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider PORT=8080 nuxi dev",
+    "dev:debug": "NODE_OPTIONS=--openssl-legacy-provider PORT=8080 node --inspect=0.0.0.0:9229 node_modules/.bin/nuxi dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production nuxi build"
+  },
+  "dependencies": {
+    "nuxt-edge": "latest",
+    "nuxt-start": "npm:nuxt-start-edge",
+    "vue": "2.7.14",
+    "vue-server-renderer": "2.7.14"
+  },
+  "devDependencies": {
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge",
+    "@types/node": "^18.11.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "resolutions": {
+    "vue": "2.7.14",
+    "vue-server-renderer": "2.7.14"
+  }
+}
